@@ -1,4 +1,6 @@
 # File containing the namespace specific parameters
+Updte second 14h41 11fev
+
 processTemplates:
 - resourceTemplateVersion: "app-0.21.1-v2.2/kafka-cluster" #{app|dmm}-{strimzi-version}-{template-version}
   # Then all the paramaters that are present in the template. Example for dmm cluster operator
