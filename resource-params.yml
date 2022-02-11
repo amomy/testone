@@ -1,0 +1,33 @@
+# File containing the namespace specific parameters
+processTemplates:
+- resourceTemplateVersion: "app-0.21.1-v2.2/kafka-cluster" #{app|dmm}-{strimzi-version}-{template-version}
+  # Then all the paramaters that are present in the template. Example for dmm cluster operator
+  # Fill template parameters. 
+  NAMESPACE: "resbi-kafka"
+  SECURITY_ZONE: 'cri'
+  CLUSTER_NAME: "bkts34"
+  KAFKA_REPLICAS: "3"
+  KAFKA_VERSION: "2.7.1"
+  KAFKA_REQUESTS_CPU: "4"
+  KAFKA_REQUESTS_MEMORY: "24Gi"
+  KAFKA_LIMITS_CPU: "4"
+  KAFKA_LIMITS_MEMORY: "24Gi"
+  LOG_VERSION: "2.7"
+  KAFKA_STORAGE_SIZE: "500Gi" #Max disk storage per VM
+  DELETE_CLAIM: "true"
+  KAFKA_JVM_MEM: "4g"
+  ZOOKEEPER_REPLICAS: "3"
+  ZOOKEEPER_REQUESTS_CPU: "1"
+  ZOOKEEPER_REQUESTS_MEMORY: "2Gi"
+  ZOOKEEPER_LIMITS_CPU: "1"
+  ZOOKEEPER_LIMITS_MEMORY: "2Gi"
+  ZOOKEEPER_STORAGE_SIZE: "10Gi"
+  ZOOKEEPER_JVM_MEM: "1g"
+  FIN_OPS: "Reservation"
+  REGION: "EU"
+  WITH_EXTERNAL_ROUTES: true
+  ENTITY_OPERATOR_ENABLED: false
+  KAFKAEXPORTER_REQUESTS_CPU: "200m"
+  KAFKAEXPORTER_REQUESTS_MEMORY: "128Mi"
+  KAFKAEXPORTER_LIMITS_CPU: "500m"
+  KAFKAEXPORTER_LIMITS_MEMORY: "256Mi"
